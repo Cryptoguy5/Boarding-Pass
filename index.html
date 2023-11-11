@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boarding Pass</title>
+    <style>
+        
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-image: url(./wooden-frame-texture-9.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .main {
+            height: 65%;
+            width: 80%;
+            background-color: none;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .first {
+            height: 100%;
+            width: 75%;
+            border-radius: 20px;
+        }
+
+        .second {
+            height: 100%;
+            width: 25%;
+            border-radius: 20px;
+            border-left: 5px dotted rgb(187, 197, 9);
+        }
+
+        .one {
+            height: 20%;
+            width: 100%;
+            background-color: rgb(187, 197, 9);
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .B {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .two {
+            height: 70%;
+            width: 100%;
+            background-image: url(./stylish-hexagonal-line-pattern-background_1017-19742.avif);            
+        }
+
+        .three {
+            height: 10%;
+            width: 100%;
+            background-color: rgb(187, 197, 9);
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        img {
+            height: 80%;
+            padding: 2%;
+        }
+
+        .img2 {
+            height: 20%;
+            width: 90%;
+            position: relative;
+            left: 10px;
+        }
+
+        .a {
+            height: 100%;
+            width: 40%;
+        }
+
+        .b {
+            margin: 0;
+            margin-left: 10px;
+        }
+        
+        .c {
+            display: flex;
+            flex-direction: row;
+        }
+
+
+        h2 {
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-top: 0;
+        }
+
+        .firstclass {
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: repeat(2, auto);
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-left: 2px;
+            margin: 0;
+        }        
+        
+        .d {
+            margin-top: 50px;
+        }
+
+        .e {
+            margin-top: 25px;
+        }
+
+        .f {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px;
+        }
+
+        @media (max-width: 680px) {
+             
+            body {
+                height: 100vh;
+            }
+            
+            .main {
+                height: 100%;
+                flex-direction: column;
+                font-size: 8px;
+            }
+
+            .first {
+                width: 100%;
+                text-align: center;
+            }
+
+            .second {
+                width: 100%;
+                border-top: 5px dotted rgb(187, 197, 9);
+                border-left: none;
+                text-align: center;
+            }
+            
+            img {
+                height: 50px;
+                width: 10%;
+            }
+
+            .img2 {
+               height: 50px;
+               width: 50px;
+            }
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="first">
+            <div class="one">
+                <img src="./plane.png" alt="plane">
+              <div class="a">
+                <h2>National Airlines</h2>
+                <p>Passenger Ticket And Baggage Check</p>
+             </div>
+                <div>
+                  <h2>Boarding Pass</h2>
+                  <p class="firstclass">First Class</p>
+                </div>
+            </div>
+            <div class="two c">
+                <img src="./websiteQRCode_noFrame.png" alt="QR Code">
+                <div>
+                    <p class="b">Passenger</p>
+                    <h2 class="b">JAMES SMITH</h2>
+                    <p class="b">From:</p>
+                    <h2 class="b">CHICAGO ORD</h2>
+                    <div class="grid d">
+                        <p class="b firstclass">Flight</p>
+                        <p class="b firstclass">Date</p>
+                        <p class="b firstclass">Time</p>
+                        <h2 class="b">NA4321</h2>
+                        <h2 class="b">06 Dec 20</h2>
+                        <h2 class="b">11:40</h2>
+                    </div>
+                    <div class="grid">
+                        <p class="b firstclass">Gate</p>
+                        <p class="b firstclass">Boarding till:</p>
+                        <p class="b firstclass">Seat</p>
+                        <h2 class="b firstclass">03</h2>
+                        <h2 class="b firstclass">11:20</h2>
+                        <h2 class="b firstclass">09A</h2>
+                    </div>
+                    <p class="e b">Electronic Ticket</p>
+                    <h2 class="b">629</h2>
+                </div>
+               <div class="f">
+                <p class="b">To</p>
+                <h2 class="b">NEW YORK JFK</h2>
+                <p class="b">Arrival Time:</p>
+                <h2 class="b">13:30</h2>
+                <p class="b">Terminal</p>
+                <h2 class="b">2</h2>
+              </div>
+            </div>
+            <div class="three">
+                <p>5A6BCD78</p>
+                <p>PLEASE BE AT THE GATE AT THE BOARDING TIME</p>
+
+            </div>
+        </div>
+        <div class="second">
+            <div class="one B">
+              <h2>National Airlines</h2>
+              <p>First Class</p>
+            </div>
+            <div class="two">
+                <div>
+                    <p class="b">Passenger</p>
+                    <h2 class="b">JAMES SMITH</h2>
+                    <p class="b">From:</p>
+                    <h2 class="b">CHICAGO ORD</h2>
+                    <p class="b">To:</p>
+                    <h2 class="b">NEW YORK JFK</h2>
+                </div>
+                <div class="grid">
+                    <p class="b firstclass">Flight</p>
+                    <p class="b firstclass">Date</p>
+                    <p class="b firstclass">Time</p>
+                    <h2 class="b">NA4321</h2>
+                    <h2 class="b">06 Dec 20</h2>
+                    <h2 class="b">11:40</h2>
+                </div>
+                <div class="grid">
+                    <p class="b firstclass">Gate</p>
+                    <p class="b firstclass">Boarding till:</p>
+                    <p class="b firstclass">Seat</p>
+                    <h2 class="b firstclass">03</h2>
+                    <h2 class="b firstclass">11:20</h2>
+                    <h2 class="b firstclass">09A</h2>
+                </div>
+                <img class="img2" src="./websiteQRCode_noFrame.png" alt="QR Code">
+            </div>
+            <div class="three">
+                <p>5A6BCD78</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
